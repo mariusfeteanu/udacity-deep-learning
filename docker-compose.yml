@@ -2,7 +2,9 @@ version: "3"
 
 services:
   jupyter:
-    build: ./jupyter.dockerfile
+    build:
+      context: .
+      dockerfile: jupyter.dockerfile
     command: start-notebook.sh --NotebookApp.token=''
     volumes:
      - ./src/notebook:/home/jovyan/work
