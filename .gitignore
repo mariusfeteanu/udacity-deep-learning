@@ -54,10 +54,16 @@ __pycache__
 \#*#
 .#*
 .coverage
-src
 
 *.swp
 *.map
 .idea/
 Read the Docs
 config.rst
+
+
+### Data sets
+**/*notMNIST*.png
+**/*notMNIST*.tar.gz
+
+**/notMNIST*/**/*.png
