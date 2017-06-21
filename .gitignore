@@ -67,3 +67,4 @@ config.rst
 **/*notMNIST*.tar.gz
 
 **/notMNIST*/**/*.png
+*.pickle
