@@ -2,11 +2,8 @@ version: "3"
 
 services:
   jupyter:
-    build:
-      context: .
-      dockerfile: jupyter.dockerfile
-    command: start-notebook.sh --NotebookApp.token=''
+    image: tensorflow/tensorflow:nightly-gpu-py3
     volumes:
-     - ./src/notebook:/home/jovyan/work
+     - ./src/notebook:/notebooks
     ports:
       - "8888:8888"
